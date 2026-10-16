@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>TAEJA 디자인 도구</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e4e4e0;
+    --accent: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414;
+      --card: #1e1e1e;
+      --text: #f0f0f0;
+      --sub: #a0a0a0;
+      --line: #2e2e2e;
+      --accent: #f0f0f0;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", -apple-system, "Malgun Gothic", sans-serif;
+    line-height: 1.5;
+    padding: 56px 16px;
+  }
+  main { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+  .lead { color: var(--sub); margin-top: 6px; font-size: 15px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 32px;
+  }
+  a.card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color .15s, transform .15s;
+  }
+  a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .tag { font-size: 12px; color: var(--sub); }
+  .name { font-size: 18px; font-weight: 700; }
+  .desc { font-size: 14px; color: var(--sub); }
+  .foot { margin-top: 32px; font-size: 13px; color: var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <h1>디자인 도구</h1>
+  <p class="lead">설치 없이 브라우저에서 바로 씁니다. 작업 파일은 내 PC 안에서만 처리됩니다.</p>
+
+  <div class="grid">
+    <a class="card" href="https://yunjt-max.github.io/bentopdf/" target="_blank" rel="noopener">
+      <span class="tag">PDF</span>
+      <span class="name">PDF 편집</span>
+      <span class="desc">합치기 · 나누기 · 압축 · 서명 · 변환</span>
+    </a>
+    <a class="card" href="https://yunjt-max.github.io/miniPaint/" target="_blank" rel="noopener">
+      <span class="tag">사진</span>
+      <span class="name">사진 편집</span>
+      <span class="desc">PSD 열기 · 레이어 · 보정 · 자르기</span>
+    </a>
+    <a class="card" href="https://yunjt-max.github.io/Graphite/" target="_blank" rel="noopener">
+      <span class="tag">벡터</span>
+      <span class="name">벡터 디자인</span>
+      <span class="desc">로고 · 도안 · SVG 편집</span>
+    </a>
+    <a class="card" href="https://yunjt-max.github.io/omniclip/" target="_blank" rel="noopener">
+      <span class="tag">영상</span>
+      <span class="name">영상 편집</span>
+      <span class="desc">컷 편집 · 자막 · 전환 효과 · 4K 출력</span>
+    </a>
+  </div>
+
+  <p class="foot">크롬 또는 엣지 최신 버전에서 열어 주세요.</p>
+</main>
+</body>
+</html>
